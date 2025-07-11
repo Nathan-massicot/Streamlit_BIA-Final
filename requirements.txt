@@ -1,0 +1,6 @@
+streamlit==1.46.1        # optionnel : déjà présent, mais ça fige la version
+plotly>=5.20.0
+matplotlib>=3.9
+pandas>=2.3
+numpy>=2.3
+# …ajoute toute autre dépendance que tu utilises (scikit-learn, requests, etc.)
