@@ -1,6 +1,21 @@
-streamlit==1.46.1        # optionnel : déjà présent, mais ça fige la version
-plotly>=5.20.0
+# requirements.txt — version “propre”
+
+# cœur de l’app
+streamlit==1.46.1        # fige la version testée
+
+# data viz
+plotly>=5.20.0           # OK pour px, go, etc.
 matplotlib>=3.9
+seaborn                  # s’appuie sur matplotlib
+pydeck                   # déjà dans Streamlit, mais tu peux l’expliciter
+
+# data science
 pandas>=2.3
 numpy>=2.3
+scikit-learn             # ML
+
+# carto
+folium
+streamlit-folium
+geopandas                # ⚠️ nécessite GDAL/GEOS ; vois plus bas
 # …ajoute toute autre dépendance que tu utilises (scikit-learn, requests, etc.)
